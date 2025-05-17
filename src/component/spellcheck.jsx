@@ -50,8 +50,13 @@ const SimpleSpellChecker = () => {
 
       <div style={{ marginTop: "15px" }}>
         {suggestions.length > 0 && (
-          <p style={{ color: "red" }}>
-            Did you mean:{suggestions[0].split('"')[1]}?
+          <p>
+            Did you mean: {suggestions[0].split('"')[1]}?
+          </p>
+        )}
+        {suggestions.length === 0 && input.trim() !== "" && (
+          <p>
+            Did you mean: 
           </p>
         )}
       </div>
