@@ -54,11 +54,11 @@ const SimpleSpellChecker = () => {
             Did you mean: {suggestions[0].split('"')[1]}?
           </p>
         )}
-        {suggestions.length === 0 && input.trim() !== "" && (
+{/*         {suggestions.length === 0 && input.trim() !== "" && (
           <p>
             Did you mean: 
           </p>
-        )}
+        )} */}
       </div>
     </div>
   );
